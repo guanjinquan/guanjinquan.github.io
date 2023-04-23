@@ -1,105 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Ubuntu22.04使用笔记 | Jinquan Guan&#39; Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="驱动相关1. WIFI适配器驱动问题描述： 不知道怎么回事，突然间ubuntu无法连接wifi。起初以为是网卡被关掉了，但是NetworkManager开了也没办法。找博客一个一个方案去试，发现是驱动出了问题。 问题解决： 参考链接 幸运的是，我重装驱动就好了。注意：重装驱动之后必须重启，然后会进入一个蓝屏的设置模式，你需要按这个BLOG来操作。 重装驱动的命令： 12sudo apt-get u">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu22.04使用笔记">
-<meta property="og:url" content="https://guanjinquan.github.io/2023/04/23/Ubuntu22-04%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/index.html">
-<meta property="og:site_name" content="Jinquan Guan&#39; Blog">
-<meta property="og:description" content="驱动相关1. WIFI适配器驱动问题描述： 不知道怎么回事，突然间ubuntu无法连接wifi。起初以为是网卡被关掉了，但是NetworkManager开了也没办法。找博客一个一个方案去试，发现是驱动出了问题。 问题解决： 参考链接 幸运的是，我重装驱动就好了。注意：重装驱动之后必须重启，然后会进入一个蓝屏的设置模式，你需要按这个BLOG来操作。 重装驱动的命令： 12sudo apt-get u">
-<meta property="og:locale">
-<meta property="article:published_time" content="2023-04-23T12:42:45.000Z">
-<meta property="article:modified_time" content="2023-04-23T12:50:33.761Z">
-<meta property="article:author" content="Jinquan GUan">
-<meta property="article:tag" content="OS;Ubuntu;">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Jinquan Guan' Blog" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        Jinquan Guan&#39; Blog
+    </title>
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
 
-  
-  
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Jinquan Guan&#39; Blog</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">学习笔记</a>
-        </h2>
-      
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            Ubuntu22.04使用笔记
+        </p>
+        <hr>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://guanjinquan.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-Ubuntu22-04使用笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/23/Ubuntu22-04%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2023-04-23T12:42:45.000Z" itemprop="datePublished">2023-04-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      Ubuntu22.04使用笔记
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
+    <div class="post-content">
         <h1 id="驱动相关"><a href="#驱动相关" class="headerlink" title="驱动相关"></a>驱动相关</h1><h3 id="1-WIFI适配器驱动"><a href="#1-WIFI适配器驱动" class="headerlink" title="1. WIFI适配器驱动"></a>1. WIFI适配器驱动</h3><p><strong>问题描述：</strong></p>
 <p>不知道怎么回事，突然间ubuntu无法连接wifi。起初以为是网卡被关掉了，但是NetworkManager开了也没办法。找博客一个一个方案去试，发现是驱动出了问题。</p>
 <p><strong>问题解决：</strong></p>
@@ -111,129 +40,63 @@
 
 
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="https://guanjinquan.github.io/2023/04/23/Ubuntu22-04%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" data-id="clgtk8yr800005fq0hv138twk" data-title="Ubuntu22.04使用笔记" class="article-share-link">Teilen</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OS-Ubuntu/" rel="tag">OS;Ubuntu;</a></li></ul>
 
-    </footer>
-  </div>
-  
     
-<nav id="article-nav">
-  
-  
-    <a href="/2023/04/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
+        <hr class="fhr">
+        <div id="vcomments"></div>
     
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/OS-Ubuntu/" rel="tag">OS;Ubuntu;</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/OS-Ubuntu/" style="font-size: 10px;">OS;Ubuntu;</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li></ul>
-    </div>
-  </div>
+<script src="/libs/jquery.min.js"></script>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/04/23/Ubuntu22-04%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">Ubuntu22.04使用笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/23/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+<script src="/libs/highlight/highlight.pack.js"></script>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 Jinquan GUan<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+<script src="/js/js.js"></script>
 
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
 
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
 
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+.v a {
+    color: #8696b1;
+}
 
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
 </body>
+
 </html>
